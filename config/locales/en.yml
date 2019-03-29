@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  static_pages:
+    home:
+      wellcome: "Welcome to the Sample App"
+      homepage: "This is the home page for the"
+      ruby: "Ruby on Rails Tutorial"
+      sample: "sample application."
