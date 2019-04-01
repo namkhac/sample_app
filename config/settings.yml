@@ -1,0 +1,12 @@
+maxname: 50
+maxemail: 255
+minpass: 6
+size: 80
+linkruby: "http://rubyonrails.org/"
+# layouts/footer
+linkrail: "https://www.railstutorial.org/"
+linkmh: "http://www.michaelhartl.com/"
+# layouts/shim
+linkcdnjs: "//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"
+# layouts/contact
+linkcontact: "https://www.railstutorial.org/contact"
