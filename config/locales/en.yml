@@ -29,5 +29,49 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+en :
+  hello : "Hello world"
+  views:
+    layouts:
+      footer:
+        new: "News"
+        the: "The"
+        by: "By"
+        tutorial: "Ruby on Rails Tutorial"
+        mh: "Michael Hartl"
+        about: "About"
+        contact: "Contact"
+      application:
+        sample_app: "sample app"
+        logo: "logo"
+        home: "Home"
+        help: "Help"
+        login: "Login"
+      header:
+        sample_app: "sample app"
+        home: "Home"
+        help: "Help"
+        login: "Login"
+        logo: "logo"
+    static_pages:
+      contact:
+        contact: "Contact"
+        contactpage: "contact page"
+        contactthe: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      home:
+        ruby : "Ruby on Rails Tutorial"
+        welcome : "Welcome to the Sample App"
+        homepage : "This is the home page for the"
+        sample : "sample application."
+        signupnow: "Sign up now!"
+        railslogo: "Rails logo"
+    users:
+      new:
+        Createmyaccount: "Create my account"
+    controllers:
+      users:
+        welcome_sample_app: "Welcome to the Sample App!"
+  static_pages :
+    home :
+      sign : "Sign up"
+      Confirmation: "Confirmation"
