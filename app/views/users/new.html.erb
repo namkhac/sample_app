@@ -15,9 +15,12 @@
       <%= f.password_field :password, class: "form-control" %>
 
       <%= f.label :password_confirmation, t "views.users.new.Confirmation" %>
+
       <%= f.password_field :password_confirmation, class: "form-control" %>
 
       <%= f.submit t "views.users.new.Createmyaccount", class: "btn btn-primary" %>
+
+      <%= f.label :password_confirmation, t "views.users.new.Confirmation" %>
     <% end %>
   </div>
 </div>

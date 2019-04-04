@@ -1,16 +1,20 @@
 class UsersController < ApplicationController
-
   def new
     @user = User.new
   end
 
   def show
+    @user = User.find_by id: params[:id]
+    return if @user
+    flash[:danger]= t "views.controllers.users.invalid_user"
+    redirect_to root_path
   end
 
   def create
-    @user = User.new(params[:user])
+    @user = User.new user_params
     if @user.save
-      flash[:success] = t(".controllers.users.welcome")
+      log_in @user
+      flash[:success] = t "views.controllers.users.welcome_to"
       redirect_to @user
     else
       render :new
@@ -19,14 +23,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:name, :email, :password, :password_confirmation)
-  end
-
-  def find_by_id
-    @user = User.find_by(id: params[:id])
-    if @user.nil?
-      flash[:danger] = t("controllers.users.invalid")
-      redirect_to root_path
-    end
+    params.require(:user).permit :name, :email, :password, :password_confirmation
   end
 end
