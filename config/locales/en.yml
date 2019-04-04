@@ -31,6 +31,9 @@
 
 en :
   hello : "Hello world"
+  static_pages:
+    home:
+
   views:
     layouts:
       footer:
@@ -68,10 +71,20 @@ en :
     users:
       new:
         Createmyaccount: "Create my account"
-    controllers:
-      users:
-        welcome_sample_app: "Welcome to the Sample App!"
-  static_pages :
-    home :
-      sign : "Sign up"
-      Confirmation: "Confirmation"
+        sign : "Sign up"
+        Confirmation: "Confirmation"
+    shared:
+      error:
+        the: "The form contains"
+        error: "error"
+  controllers:
+    users:
+      welcome: "Welcome to the Sample App!"
+      invalid: "Invalid user"
+  helpers:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+  config:
+    settings:
+      routes:
+        helf: "helf"

@@ -2,16 +2,16 @@
 <html>
   <head>
     <div class = "center jumbotron">
-      <h1><%= t ".welcome"%></h1>
+      <h1><%= t "views.static_pages.home.welcome"%></h1>
       <h2>
-        <%= t ".homepage" %>
-        <%= link_to t(".ruby"), Settings.linkrail %>
-        <%= t ".sample" %>
+        <%= t "views.static_pages.home.homepage" %>
+        <%= link_to t("views.static_pages.home.ruby"), Settings.linkrail %>
+        <%= t "views.static_pages.home.sample" %>
       </h2>
-      <%= link_to t(".signupnow"), signup_path, class: "btn btn-lg btn-primary" %>
+      <%= link_to t("views.static_pages.home.signupnow"), signup_path, class: "btn btn-lg btn-primary" %>
     </div>
     <%= image_tag("kitten.jpg", alt: "Kitten") %>
-    <%= link_to image_tag("rails.png", alt: t(".railslogo")), Settings.linkruby %>
+    <%= link_to image_tag("rails.png", alt: t("views.static_pages.home.railslogo")), Settings.linkruby %>
   </head>
   <body>
   </body>

@@ -1,13 +1,13 @@
 <footer class = "footer">
   <small>
-    <%= t ".the" %> <%= link_to t(".tutorial"), Settings.linkrail %>
-    <%= t ".by" %> <%= link_to t(".mh"), Settings.linkmh %>
+    <%= t "views.layouts.footer.the" %> <%= link_to t("views.layouts.footer.tutorial"), Settings.linkrail %>
+    <%= t "views.layouts.footer.by" %> <%= link_to t("views.layouts.footer.mh"), Settings.linkmh %>
   </small>
   <nav>
     <ul>
-      <li><%= link_to t(".about"), about_path %></li>
-      <li><%= link_to t(".contact"), contact_path %></li>
-      <li><%= link_to t(".new"), Settings.linkrail%></li>
+      <li><%= link_to t("views.layouts.footer.about"), about_path %></li>
+      <li><%= link_to t("views.layouts.footer.contact"), contact_path %></li>
+      <li><%= link_to t("views.layouts.footer.new"), Settings.linkrail%></li>
     </ul>
   </nav>
 </footer>
