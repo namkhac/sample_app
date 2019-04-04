@@ -2,7 +2,6 @@ en :
   hello : "Hello world"
   static_pages:
     home:
-
   controllers:
     users:
       invalid_user: "Invalid user"
@@ -39,6 +38,7 @@ en :
       new: "New user?"
       login: "log in"
       signupnow: "Sign up now!"
+      remember_me: "Remember me on this computer"
     shared:
       error:
         the: "The form contains"
