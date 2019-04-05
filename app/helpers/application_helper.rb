@@ -1,6 +1,6 @@
 module ApplicationHelper
-  def full_title(page_title = " ")
-    base_title = t(".helpers.application.title")
+  def full_title page_title = ""
+    base_title = t "helpers.application.ruby_on"
     if page_title.empty?
       base_title
     else
