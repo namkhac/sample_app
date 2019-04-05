@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      flash[:success] = t(".welcome_sample_app")
+      flash[:success] = t(".controllers.users.welcome")
       redirect_to @user
     else
       render :new
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   def find_by_id
     @user = User.find_by(id: params[:id])
     if @user.nil?
-      flash[:danger] = t(".controllers.invalid_user")
+      flash[:danger] = t("controllers.users.invalid")
       redirect_to root_path
     end
   end
