@@ -2,6 +2,7 @@ maxname: 50
 maxemail: 255
 minpass: 6
 size: 80
+
 linkruby: "http://rubyonrails.org/"
 linkrail: "https://www.railstutorial.org/"
 linkmh: "http://www.michaelhartl.com/"
